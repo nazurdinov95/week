@@ -1,13 +1,15 @@
 const button = document.getElementById('addButton');
 
-button.addEventListener('click', () => {
+button.addEventListener('click', () = > {
     addButton();
 })
 
 const input = document.getElementById('input');
 
-input.addEventListener('keydown', (e) => {
-    if ( e.keyCode === 13 ) {
+input.addEventListener('keydown', (e) = > {
+    if(e.keyCode === 13
+)
+{
     addButton();
 }
 })
@@ -19,7 +21,7 @@ function addButton() {
 
     switch (day) {
         case "1":
-            dayOfWeek= "Monday";
+            dayOfWeek = "Monday";
             break;
         case "2":
             dayOfWeek = "Tuesday";
@@ -42,5 +44,5 @@ function addButton() {
         default:
             dayOfWeek = "Another day";
     }
-    document.getElementById('message').innerHTML =dayOfWeek;
+    document.getElementById('message').innerHTML = dayOfWeek;
 }
